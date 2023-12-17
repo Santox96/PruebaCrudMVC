@@ -1,0 +1,17 @@
+CODE OF SQL
+
+CREATE DATABASE PruebaCrudMVC 
+USE PruebaCrudMVC
+
+CREATE TABLE Libros(
+Id int identity(1,1) primary key,
+Nombre varchar(50),
+FechaPublicacion date,
+Descripcion varchar(100)
+)
+
+SELECT * FROM Libros
+
+ALTER TABLE Libros
+ADD Autor varchar(50);
+
